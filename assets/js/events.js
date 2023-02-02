@@ -9,7 +9,23 @@ const mySubButton = document.getElementById('subtractButton');
 
 //skriv event listners her
 
-myAddButton.addEventListener
+myAddButton.addEventListener('click', (e) => {
+
+    e.preventDefault();
+
+    myButtonValue = myButtonValue + 1;
+
+    showResult(myButtonValue,buttonResult);
+});
+
+mySubButton.addEventListener('click', (e) => {
+
+    e.preventDefault();
+
+    myButtonValue = myButtonValue - 1;
+    
+    showResult(myButtonValue,buttonResult);
+});
 
 
 
@@ -22,6 +38,14 @@ const diceButton = document.getElementById('rollDiceOne');
 
 //skriv event listners her
 
+diceButton.addEventListener('click', (e) => {
+
+    e.preventDefault();
+
+    let diceRoll = getRandomNumber(1, 6);
+
+    showResult(diceRoll, myDiceRes);
+});
 
 
 
@@ -35,7 +59,13 @@ let myLiveTextResult = document.getElementById('tasteResult');
 
 //skriv event listners her
 
+myLiveText.addEventListener('keyup', (e) => {
 
+    e.preventDefault();
+
+    showResult(myLiveText.value, myLiveTextResult);
+
+});
 
 
 

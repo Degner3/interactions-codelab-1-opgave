@@ -12,6 +12,17 @@ const mySubButton = document.getElementById('subtractButton');
 
 
 
+myAddButton.addEventListener('click', (e) => {
+
+    e.preventDefault();
+    console.log();
+});
+
+function showResult(myButtonValue,buttonResult) {
+
+
+
+};
 
 
 /* opgave 2 dice*/

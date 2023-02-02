@@ -9,20 +9,10 @@ const mySubButton = document.getElementById('subtractButton');
 
 //skriv event listners her
 
+myAddButton.addEventListener
 
 
 
-myAddButton.addEventListener('click', (e) => {
-
-    e.preventDefault();
-    console.log();
-});
-
-function showResult(myButtonValue,buttonResult) {
-
-
-
-};
 
 
 /* opgave 2 dice*/

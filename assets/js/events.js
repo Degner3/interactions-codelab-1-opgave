@@ -51,7 +51,7 @@ diceButton.addEventListener('click', (e) => {
 
     e.preventDefault();
 
-    let diceRoll = getRandomNumber(1, 7);
+    let diceRoll = getRandomNumber(1, 6);
 
     showResult(diceRoll, myDiceRes);
 });
@@ -98,5 +98,6 @@ function getRandomNumber(min, max) {
     let myMin = Math.ceil(min);
     let myMax = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min);
+    // return Math.ceil(Math.random() * (max - min) + min);
 }
 

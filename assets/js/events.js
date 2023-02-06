@@ -12,21 +12,30 @@ const mySubButton = document.getElementById('subtractButton');
 myAddButton.addEventListener('click', (e) => {
 
     e.preventDefault();
-
+    // myButtonValue++
     myButtonValue = myButtonValue + 1;
 
-    showResult(myButtonValue,buttonResult);
+    // showResult(myButtonValue,buttonResult);
+
+    displayResult(myButtonValue);
 });
 
 mySubButton.addEventListener('click', (e) => {
 
     e.preventDefault();
-
+    // myButtonValue--
     myButtonValue = myButtonValue - 1;
     
-    showResult(myButtonValue,buttonResult);
+    // showResult(myButtonValue,buttonResult);
+
+    displayResult(myButtonValue);
 });
 
+function displayResult(myData){
+
+    myButtonResult.innerHTML = myData;
+
+};
 
 
 
@@ -42,7 +51,7 @@ diceButton.addEventListener('click', (e) => {
 
     e.preventDefault();
 
-    let diceRoll = getRandomNumber(1, 6);
+    let diceRoll = getRandomNumber(1, 7);
 
     showResult(diceRoll, myDiceRes);
 });
